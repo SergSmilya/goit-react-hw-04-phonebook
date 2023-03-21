@@ -15,6 +15,7 @@ const defaultArrayContacts = [
 export default function App() {
   const [filter, setFilter] = useState('');
 
+  // Переписать useState contacts на кастомн. хук
   const [contacts, setContacts] = useState(() => {
     const parseContacts = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
